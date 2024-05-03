@@ -1,4 +1,7 @@
 let message = document.getElementById("message");
+const name = document.currentScript.getAttribute('data-payload');
+
+console.log('name', JSON.parse(name));
 
 window.addEventListener('keydown', function (event) {
     if (event.ctrlKey)
